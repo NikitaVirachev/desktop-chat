@@ -2,8 +2,226 @@
 /* NOMAD LIST */
 /**************************/
 
-.nomad-list {
+.background {
   width: 26rem;
+  height: 100vh;
+  background: url(/img/background.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.nomad-list {
+  height: 100%;
+  padding: 3.5rem 1.7rem 0 2.3rem;
+
+  backdrop-filter: blur(20px);
+  background: rgba(37, 39, 42, 0.75);
+  mix-blend-mode: normal;
+  overflow-y: scroll;
+}
+
+.nomad-list::-webkit-scrollbar {
+  width: 0.7rem;
+  padding: 0.65rem;
+  background: none;
+}
+
+.nomad-list::-webkit-scrollbar-thumb {
+  /* width: 0.7rem; */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+}
+
+.nomad-list-header {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  justify-items: end;
+}
+
+.nomad-list-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #fff;
+}
+
+.btn {
+  background: none;
+  border: none;
+  height: auto;
+  cursor: pointer;
+}
+
+.nomad-list-down {
+  background: url(/img/interface/chevron-down.svg);
+  width: 10px;
+  height: 7px;
+}
+
+.nomad-list-settings {
+  background: url(/img/interface/settings.svg);
+  width: 14px;
+  height: 15px;
+}
+
+.all-threads {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  margin-top: 3rem;
+}
+
+.all-threads-icon {
+  background: url(/img/interface/bubble.svg) no-repeat center;
+  width: 18px;
+  height: 18px;
+}
+
+.all-threads p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #b5b5b5;
+}
+
+.nomad-list-section-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nomad-list-section-heading p {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+
+  text-transform: uppercase;
+  color: #919191;
+}
+
+/* CHANNELS */
+
+.channels {
+  margin-top: 3.15rem;
+}
+
+.channels-nav {
+  margin-top: 1.5rem;
+}
+
+.channels-nav-link:link,
+.channels-nav-link:visited {
+  display: block;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #b5b5b5;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.channels-nav-link:hover,
+.channels-nav-link:active {
+  background: rgba(255, 255, 255, 0.2);
+  mix-blend-mode: normal;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.channels-nav-link p {
+  width: 100%;
+  padding: 0.3rem 0 0.9rem 1.3rem;
+  border-radius: 5px;
+}
+
+.channels-nav-link-active p {
+  background: rgba(255, 255, 255, 0.2);
+  mix-blend-mode: normal;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* FRIENDS */
+
+.friends {
+  margin-top: 1rem;
+}
+
+.friends-list {
+  margin-top: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.friends-list-item {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: inherit;
+  cursor: pointer;
+}
+
+.friends-list-cicle {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: #666;
+}
+
+.cicle-active {
+  background: #70cc16;
+}
+
+.friends-list-avatar {
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: 0.8rem;
+  margin-right: 1.25rem;
+
+  border-radius: 5px;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+
+.avatar-Orlando {
+  background: url(/img/avatars/Orlando\ Diggs.png);
+  background-size: cover;
+}
+
+.avatar-Carmen {
+  background: url(/img/avatars/Carmen\ Velasco.png);
+  background-size: cover;
+}
+
+.avatar-Marie {
+  background: url(/img/avatars/Marie\ Jensen.png);
+  background-size: cover;
+}
+
+.avatar-Alex {
+  background: url(/img/avatars/Alex\ Lee.png);
+  background-size: cover;
+}
+
+.avatar-Leo {
+  background: url(/img/avatars/Leo\ Gill.png);
+  background-size: cover;
+}
+
+.avatar-Britney {
+  background: url(/img/avatars/Britney\ Cooper.png);
+  background-size: cover;
+}
+
+.friends-list-item p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #b5b5b5;
 }
 
 /**************************/
