@@ -2,16 +2,9 @@
 /* NOMAD LIST */
 /**************************/
 
-.background {
+.nomad-list {
   width: 26rem;
   height: 100vh;
-  background: url(/img/background.png);
-  background-position: center;
-  background-size: cover;
-}
-
-.nomad-list {
-  height: 100%;
   padding: 3.5rem 1.7rem 0 2.3rem;
 
   backdrop-filter: blur(20px);
@@ -230,4 +223,74 @@
 
 .profile {
   width: 20rem;
+  background: rgba(255, 255, 255, 0.8);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(20px);
+}
+
+.profile-photo {
+  width: 20rem;
+  height: 20rem;
+  background: url(/img/photo\ of\ a\ girl\ in\ a\ dress.png) no-repeat;
+  background-position: 45% 16%;
+  background-size: 266%;
+}
+
+.profile-text-box {
+  padding: 1.5rem 2rem 2.8rem 2rem;
+}
+
+.profile-name {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+}
+
+.profile-name h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #000;
+}
+
+.profile-description {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #5f6164;
+  margin-top: 0.45rem;
+}
+
+.profile-network {
+  display: flex;
+  gap: 0.65rem;
+  margin-top: 2.1rem;
+}
+
+.profile-network-logo:link,
+.profile-network-logo:visited {
+  display: block;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+}
+
+.facebook {
+  background: url(/img/socialmedia/facebook\ icon.svg) no-repeat #e8e8eb;
+  background-position: 45%;
+}
+
+.twitter {
+  background: url(/img/socialmedia/twitter\ icon.svg) no-repeat #e8e8eb;
+  background-position: 45%;
+}
+
+.instagram {
+  background: url(/img/socialmedia/instagram\ icon.svg) no-repeat #e8e8eb;
+  background-position: 50%;
+}
+
+.linkedin {
+  background: url(/img/socialmedia/LinkedIn\ icon.svg) no-repeat #e8e8eb;
+  background-position: 60%;
 }
