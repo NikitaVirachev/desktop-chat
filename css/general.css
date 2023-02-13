@@ -27,3 +27,14 @@ body {
   display: grid;
   grid-template-columns: auto 1fr auto;
 }
+
+.cicle {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: #666;
+}
+
+.cicle-active {
+  background: #70cc16;
+}
