@@ -351,3 +351,100 @@
   margin-top: auto;
   margin-left: auto;
 }
+
+/**************************/
+/* CHAT */
+/**************************/
+
+.chat {
+  background: #fff;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.chat-header {
+  display: flex;
+  gap: 2.2rem;
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.24);
+}
+
+.chat-title {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.chat-title h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #000;
+}
+
+.chat-title-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(/img/interface/star.svg) no-repeat;
+  background-position: center;
+}
+
+.chat-header-people {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-left: auto;
+}
+
+.chat-header-people-icon {
+  width: 1.05rem;
+  height: 1.5rem;
+  background: url(/img/interface/pop.svg) no-repeat;
+  background-position: center;
+}
+
+.chat-header-people-count {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #a4a4a4;
+}
+
+.chat-header-search {
+  /* width: 24rem;
+  height: 3.3rem; */
+  background: rgba(0, 0, 0, 0.0001);
+  border: 0.5px solid rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 0.8rem 0 1.6rem;
+}
+
+.chat-header-search input {
+  width: auto;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #8d8d8d;
+  padding: 0.8rem 0;
+  border: none;
+}
+
+.chat-header-search button {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(/img/interface/loupe.svg) no-repeat;
+  background-position: center;
+}
+
+.chat-header-notifications {
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(/img/interface/bell.svg) no-repeat;
+  background-position: center;
+}
+
+.chat-input-area {
+  height: 7rem;
+}
