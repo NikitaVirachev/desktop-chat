@@ -358,8 +358,11 @@
 
 .chat {
   background: #fff;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  /* display: grid;
+  grid-template-rows: auto 1fr auto; */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .chat-header {
@@ -514,4 +517,129 @@
   height: 2rem;
   background: url(/img/interface/smiley.svg) no-repeat;
   background-position: center;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  padding: 2rem 2.4rem;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.chat-messages::-webkit-scrollbar {
+  width: 0.7rem;
+  padding: 0.65rem;
+  background: none;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  /* width: 0.7rem; */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+}
+
+.chat-message {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.chat-message-avatar {
+  width: 3.2rem;
+  height: 3.3rem;
+  border-radius: 0.4rem;
+}
+
+.chat-message-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.chat-message-content-header {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.chat-message-content-header-name,
+.chat-message-content-header-time {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.chat-message-content-header-name {
+  color: #000;
+}
+
+.chat-message-content-header-time {
+  color: #8d8d8d;
+}
+
+.chat-message-content-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #000;
+}
+
+.chat-message-content-link {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #3577ef;
+}
+
+.chat-messages-date {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.chat-messages-date-line {
+  flex-grow: 1;
+  height: 0.1rem;
+  background: #000;
+  opacity: 0.16;
+}
+
+.chat-messages-date-content {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #8d8d8d;
+}
+
+.chat-message-content-img-box {
+  align-self: flex-start;
+  position: relative;
+}
+
+.chat-message-content-img {
+  max-height: 20rem;
+  border-radius: 0.4rem;
+  position: relative;
+}
+
+.reactions {
+  display: block;
+  position: absolute;
+  bottom: -0.6rem;
+  right: -2.3rem;
+  width: 4.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #000;
+  padding: 0.4rem 1.1rem 0.2rem 0.6rem;
 }
