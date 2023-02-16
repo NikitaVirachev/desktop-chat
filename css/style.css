@@ -435,6 +435,11 @@
   color: #8d8d8d;
   padding: 0.6rem 0;
   border: none;
+  outline: none;
+}
+
+.chat-header-search input:focus::placeholder {
+  color: transparent;
 }
 
 .chat-header-search button {
